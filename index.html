@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/geral.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Credan Empréstimos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="center cont-nav">
+            <div class="logotipo">
+                <!-- logotipo -->
+                <a href="https://credan.com.br/"><img src="img/lt-credan.png" alt="Logotipo Credan" style="max-width: 170px;"></a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a id="btnServices">Serviços <i class="fas fa-caret-down"></i></a>
+                        <ul class="navdown">
+                            <li><a href="#consignado">Consignado INSS</a></li>
+                            <li><a href="#energia">Empréstimo na Conta de Luz</a></li>
+                            <li><a href="#fgts">Antecipação Saque Aniversário</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- <li><a href="contato.html">Contato</a></li> -->
+                    <!-- <a href="#"><button id="btn-client">Área do Cliente <i class="fas fa-sign-in-alt"></i></button></a> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- SEPARADOR -->
+
+    <section class="att-fraude">
+        <div class="center">
+            <p><i class="fas fa-exclamation-triangle" style="color: yellow"></i>ATENÇÃO: Não solicitamos nenhum tipo de
+                pagamento antecipado para liberação de crédito.</p>
+        </div>
+    </section>
+
+    <!-- SEPARADOR -->
+
+    <main>
+        <section class="div2">
+            <div class="center titulo">
+                <h1>Consiga seu crédito em 4 passos:</h1>
+                <h2>É rápido, fácil e totalmente confiável!</h2>
+            </div>
+
+            <div class="steps center">
+
+                <div class="cad cont-steps">
+                    <i class="fas fa-user-edit ico"></i>
+                    <!-- CADASTRO -->
+                    <h1>CADASTRO</h1>
+                    <p>Complete o seu cadastro online. Não se preocupe, seus dados estão 100% seguros com a gente!</p>
+                </div>
+
+                <div class="sim cont-steps">
+                    <i class="fas fa-search-dollar ico"></i>
+                    <!-- SIMULAÇÃO -->
+                    <h1>SIMULAÇÃO</h1>
+                    <p>Nossa equipe simula o valor escolhido por você de acordo com o produto selecionado.</p>
+                </div>
+
+                <div class="doc cont-steps">
+                    <i class="fas fa-copy ico"></i>
+                    <!-- DOCUMENTAÇÃO -->
+                    <h1>DOCUMENTAÇÃO</h1>
+                    <p>Você entrega os documentos necessários e aguarda o nosso contato.</p>
+                </div>
+
+                <div class="money cont-steps">
+                    <i class="fas fa-hand-holding-usd ico"></i>
+                    <!-- DINHEIRO NA CONTA -->
+                    <h1>VOCÊ RECEBE!</h1>
+                    <p>Depois que aprovar, seu dinheiro será transferido para sua conta bancária.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="div1" id="job">
+
+            <div class="center titulo">
+                <h1>Qual tipo de empréstimo você precisa?</h1>
+            </div>
+
+            <section class="center services">
+                <div class="cont-serv" id="fgts">
+                    <h1>Antecipação Saque Aniversário</h1>
+                    <h2>Antecipe em até 5 Anos do seu Saque Aniversário FGTS</h2>
+                    <div class="cont-list">
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> 100% DIGITAL!</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Receba no mesmo dia.</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Sem comprovação de renda.</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Sem parcelas mensais.</p>
+                    </div>
+                    <a onclick="redirect()"><button class="serv-btn">Saiba mais</button></a>
+                </div>
+
+                <div class="cont-serv" id="energia">
+                    <h1>Empréstimo na Conta de Energia</h1>
+                    <h2>Liberamos até R$1.000,00, e receba as parcelas junto a sua conta de Luz.</h2>
+                    <div class="cont-list">
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> 100% DIGITAL!</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Crédito de até R$1.000,00!</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Sem comprovação de renda!</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Crédito feito para você!</p>
+                    </div>
+                    <a href="#"><button class="serv-btn">Saiba mais</button></a>
+                </div>
+                <div class="cont-serv" id="consignado">
+                    <h1>Consignado INSS</h1>
+                    <h2>Empréstimo Consignado para aposentados e pensionistas do INSS</h2>
+                    <div class="cont-list">
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> 100% DIGITAL</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Menores juros e maiores prazos.</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Averbação 100% Online.</p>
+                        <p><i class="fas fa-check" style="color: greenyellow;"></i> Facilidade na contratação.</p>
+                    </div>
+                    <a href="#"><button class="serv-btn">Saiba mais</button></a>
+                </div>
+            </section>
+        </section>
+
+        <section id="sobre">
+            <div class="center titulo">
+                <div class="sobre">
+                    <h1>Sobre nós</h1>
+                    <p>A Credan tem mais de 1 ano de existência e é focada em resolver problemas e realizar sonhos através do
+                        crédito pessoal e crédito consignado para aposentados e pensionistas do INSS, Servidores
+                        públicos, funcionários de empresas privadas e Militares.</p>
+                    <p>Conseguimos nesse nosso pouco tempo de vida, milhares de clientes que contrataram crédito através
+                        da nossa equipe de forma 100% digital e segura! Se você ainda não conhece a Credan, te convido
+                        a visitar nossas redes sociais!</p>
+
+                    <div class="midias">
+                        <a href="https://www.facebook.com/CredanOficial" target="_blank"><i class="fab fa-facebook r-social"></i></a>
+                        <a href="https://www.instagram.com/cons.cred/" target="_blank"><i class="fab fa-instagram r-social"></i></a>
+                        <a href="https://web.whatsapp.com/send?phone=+551636008307" target="_blank"><i class="fab fa-whatsapp r-social"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="center">
+            <div class="warn-footer">
+                <p>A Credan não é uma instituição financeira: atuamos como correspondente bancário prestando serviços
+                    de intermediação e atendimento aos clientes e usuários de instituições financeiras.
+                    A atividade de correspondente bancário é uma regulada pelo Banco Central do Brasil, nos termos da
+                    Reolução nº 3.954, de fevereiro de 2011. As taxas de juros e prazos praticados nos empréstimos
+                    consignados (Governo Federal,Estadual, Municipal. Forças Armadas e INSS) observam as determinações
+                    de cada convênio, assim como a política da instituição financeira escolhida no ato da contratação.
+                </p>
+            </div>
+            <div class="infoemp">
+                <!-- Informações Credan -->
+                <P>Credan é uma escritório pertencente da empresa PortoGS!</P>
+                <br>
+                <h1>CREDAN COBRANCAS E INFORMACOES CADASTRAIS ME <i class="far fa-building" style="color: white"></i>
+                </h1>
+                <p>CNPJ: 43.119.963/0001-11</p>
+                <P>Atendimento 100% Online</P>
+                <p>(19) 3085-0692 <i class="fas fa-phone" style="color: white"></i> <i class="fab fa-whatsapp"
+                        style="color: white"></i></p>
+            </div>
+
+
+            <!-- <div class="footer-flex">
+                <div>
+                    <h1>SERVIÇOS</h1>
+
+                </div>
+
+                <div>
+                    <h1>CONTATO</h1>
+                </div>
+
+            </div> -->
+
+            <div class="copyright">
+                <p>Credan <i class="far fa-copyright"></i> 2024 Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
